@@ -16,7 +16,7 @@ import {
 ChartJS.register(BarController, BarElement, CategoryScale, LinearScale, LineController, LineElement, PointElement, Tooltip, Legend);
 
 const barColor = (hours) => {
-  if (hours >= 8) return '#E75480';      // pink
+  if (hours >= 8) return '#fa8bac';      // pink
   if (hours >= 7) return '#006400';      // Dark Green
   if (hours >= 5) return '#A8D672';      // Pista Green
   if (hours >= 4) return '#FF9800';      // Orange
