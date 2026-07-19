@@ -15,14 +15,13 @@ import {
 
 ChartJS.register(BarController, BarElement, CategoryScale, LinearScale, LineController, LineElement, PointElement, Tooltip, Legend);
 
-const barColor = hours => {
-  if (hours >= 10) return '#006400';
-  if (hours >= 9) return '#4CAF50';
-  if (hours >= 8) return '#FF9800';
-  if (hours >= 6) return '#FDD835';
-  if (hours >= 5) return '#FF7043';
-  if (hours > 0 && hours < 2) return '#8B0000';
-  return '#E53935';
+const barColor = (hours) => {
+  if (hours >= 8) return '#E75480';      // pink
+  if (hours >= 7) return '#006400';      // Dark Green
+  if (hours >= 5) return '#A8D672';      // Pista Green
+  if (hours >= 4) return '#FF9800';      // Orange
+  if (hours >= 2) return '#E53935';      // Red
+  return '#8B0000';                      // Dark Red (0–<3 hrs)
 };
 
 export function MonthlyChart({ stats, goal, month = new Date() }) {
