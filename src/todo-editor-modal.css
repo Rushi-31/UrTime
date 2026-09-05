@@ -1,0 +1,8 @@
+/* Keep Todo planning isolated from the dashboard controls. */
+.todo-form{position:fixed!important;z-index:220;top:50%;left:50%;width:min(460px,calc(100vw - 32px));max-height:calc(100vh - 32px);overflow:auto;transform:translate(-50%,-50%);background:#fff;border:1px solid #e7eaf0;border-radius:14px;padding:25px;box-shadow:0 24px 70px rgba(20,31,52,.28)}
+.todo-form::before{content:'Planning for tomorrow';display:block;margin:0 0 16px;color:#8a94a4;font-size:10px;font-weight:700;letter-spacing:1.3px}
+body:has(.todo-form)::before{content:'';position:fixed;inset:0;background:rgba(23,32,51,.45);z-index:210}
+body:has(.todo-form) .timer .actions{visibility:hidden}
+body:has(.todo-form) .todo-card{z-index:auto}
+.todo-form textarea{width:100%;min-height:76px;margin-top:5px;padding:8px;border:1px solid #dfe4ec;border-radius:7px;resize:vertical;font:inherit}
+@media(max-width:560px){.todo-form{padding:20px}}
