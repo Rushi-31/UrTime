@@ -106,11 +106,12 @@ function Analytics({ close }) {
         </article>
 
         <div className="chart-legend">
-          <span className="pink">8h+</span>
-          <span className="dark-green">7–7.9h</span>
-          <span className="green">5–6.9h</span>
-          <span className="orange">4–4.9h</span>
-          <span className="red">2–3.9h</span>
+          <span className="dark-green">12h+</span>
+          <span className="green">11–&lt;12h</span>
+          <span className="pista">9–&lt;11h</span>
+          <span className="yellow">8–&lt;9h</span>
+          <span className="orange">5–&lt;8h</span>
+          <span className="red">2–&lt;5h</span>
           <span className="dark-red">Below 2h</span>
         </div>
       </section>

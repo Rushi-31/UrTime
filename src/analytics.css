@@ -54,7 +54,17 @@
 }
 
 .green{
-    background:#A8D672; /* Pista Green */
+    background:#16835A;
+}
+
+.pista{
+    background:#A8D672;
+    color:#1d3a20 !important;
+}
+
+.yellow{
+    background:#FBC02D;
+    color:#493800 !important;
 }
 
 .orange{
